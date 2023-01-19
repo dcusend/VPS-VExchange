@@ -71,7 +71,7 @@
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
-        <con:endpoint>https://upgrade.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:endpoint>https://www.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
         <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
    <soapenv:Header/>
    <soapenv:Body>
@@ -82,7 +82,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>03092022</mod:endDate>
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>11022022</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -94,7 +94,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>03092022</mod:startDate>
+            <mod:reportNumber>1</mod:reportNumber><mod:startDate>11022022</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0300</mod:startTime>
             <!--Optional:-->
@@ -102,7 +102,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
             <!--Optional:-->
-            <mod:workDate>03092022</mod:workDate>
+            <mod:workDate>11022022</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
@@ -298,40 +298,40 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <vex:doExport>\r
-         <vex:in0>\r
-            <!--Optional:-->\r
-            <!--Optional:-->\r
-            <!--Optional:-->\r
-            <mod:applicationID>1286</mod:applicationID>\r
-            <mod:debitOnly>false</mod:debitOnly>\r
-            <mod:endDate>05042021</mod:endDate>\r
-            <!--Optional:-->\r
-            <mod:endTime>2359</mod:endTime>\r
-            <!--Optional:-->\r
-            <!--Optional:-->\r
-            <mod:include_returns>true</mod:include_returns>\r
-            <mod:messageVersion>2.0</mod:messageVersion>\r
-            <!--Optional:-->\r
-            <mod:password>password</mod:password>\r
-            <!--Optional:-->\r
-            <!--Optional:-->\r
-            <mod:reportNumber>2</mod:reportNumber>\r
-            <mod:startDate>05042021</mod:startDate>\r
-            <!--Optional:-->\r
-            <mod:startTime>0001</mod:startTime>\r
-            <!--Optional:-->\r
-            <!--Optional:-->\r
-            <mod:transaction_tender>3</mod:transaction_tender>\r
-            <mod:username>iahmed</mod:username>\r
-            <!--Optional:-->\r
-            <mod:workDate>05042021</mod:workDate>\r
-         </vex:in0>\r
-      </vex:doExport>\r
-   </soapenv:Body>\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doExport>
+         <vex:in0>
+            <!--Optional:-->
+            <!--Optional:-->
+            <!--Optional:-->
+            <mod:applicationID>1286</mod:applicationID>
+            <mod:debitOnly>false</mod:debitOnly>
+            <mod:endDate>05042021</mod:endDate>
+            <!--Optional:-->
+            <mod:endTime>2359</mod:endTime>
+            <!--Optional:-->
+            <!--Optional:-->
+            <mod:include_returns>true</mod:include_returns>
+            <mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>password</mod:password>
+            <!--Optional:-->
+            <!--Optional:-->
+            <mod:reportNumber>2</mod:reportNumber>
+            <mod:startDate>05042021</mod:startDate>
+            <!--Optional:-->
+            <mod:startTime>0001</mod:startTime>
+            <!--Optional:-->
+            <!--Optional:-->
+            <mod:transaction_tender>3</mod:transaction_tender>
+            <mod:username>iahmed</mod:username>
+            <!--Optional:-->
+            <mod:workDate>05042021</mod:workDate>
+         </vex:in0>
+      </vex:doExport>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
@@ -479,7 +479,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>03032022</mod:endDate>
+            <mod:applicationID>2326</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>11022022</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -491,7 +491,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>03032022</mod:startDate>
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>11022022</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0300</mod:startTime>
             <!--Optional:-->
@@ -499,7 +499,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>govo</mod:username>
             <!--Optional:-->
-            <mod:workDate>03032022</mod:workDate>
+            <mod:workDate>11022022</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
