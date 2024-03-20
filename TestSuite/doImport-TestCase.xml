@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="6c4bee85-6dc7-47bc-804b-9bb0d4d54cb5" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="doImport TestCase" searchProperties="true" maxResults="0" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="6c4bee85-6dc7-47bc-804b-9bb0d4d54cb5" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="doImport TestCase" searchProperties="true" maxResults="0">
+  <con:settings id="02271031-f7ec-48b2-8a27-3fdba0fd0a1d">
     <con:setting id="6c4bee85-6dc7-47bc-804b-9bb0d4d54cb5fileName">doImport-TestCase</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="request" id="75e87e94-3e27-4379-b021-77334ea9394a" name="doImport">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>VexchangeHttpBinding</con:interface>
       <con:operation>doImport</con:operation>
       <con:request name="doImport" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
@@ -135,7 +135,7 @@
   </con:testStep>
   <con:testStep type="request" id="3918ae42-e31f-4a23-922a-60f6168978c3" name="doImport-Demo">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>VexchangeHttpBinding</con:interface>
       <con:operation>doImport</con:operation>
       <con:request name="doImport-Demo" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
@@ -264,7 +264,7 @@
   </con:testStep>
   <con:testStep type="request" id="539e9820-d425-4c68-a83e-da24a0a58834" name="doImport-Demo3590">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>VexchangeHttpBinding</con:interface>
       <con:operation>doImport</con:operation>
       <con:request name="doImport-Demo3590" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
@@ -392,7 +392,7 @@
   </con:testStep>
   <con:testStep type="request" id="ccda8144-90db-4c4f-8f24-eb958c68d654" name="doImport-WWW2326">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>VexchangeHttpBinding</con:interface>
       <con:operation>doImport</con:operation>
       <con:request name="doImport-WWW2326" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
@@ -521,7 +521,7 @@
   </con:testStep>
   <con:testStep type="request" id="36049e2f-c704-4f0e-a17f-e16eacdb213c" name="doImport-QA234">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>VexchangeHttpBinding</con:interface>
       <con:operation>doImport</con:operation>
       <con:request name="doImport-QA234" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">
@@ -652,7 +652,7 @@
   </con:testStep>
   <con:testStep type="request" id="d5fa38c2-ee2e-498f-a25e-405591a39401" name="doImport-QA234-KernCountyTest">
     <con:settings/>
-    <con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
       <con:interface>VexchangeHttpBinding</con:interface>
       <con:operation>doImport</con:operation>
       <con:request name="doImport-QA234-KernCountyTest" id="c7cf2a60-ee8d-4157-bea2-61ee40441519" defaultOutgoingWss="" defaultIncomingWss="">

@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:operation id="d56f0f6a-13eb-4738-8b5d-b60ef0e22210" isOneWay="false" action="" name="doImport" bindingOperationName="doImport" type="Request-Response" outputName="doImportResponse" inputName="doImportRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d56f0f6a-13eb-4738-8b5d-b60ef0e22210fileName">doImport</con:setting></con:settings><con:call id="e7866246-c3a6-443e-97ea-4d251f2ee1a8" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">\r
+<con:operation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="d56f0f6a-13eb-4738-8b5d-b60ef0e22210" isOneWay="false" action="" name="doImport" bindingOperationName="doImport" type="Request-Response" outputName="doImportResponse" inputName="doImportRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional">
+  <con:settings id="d46a9185-0d59-4822-b141-1adaacd1b9e2">
+    <con:setting id="d56f0f6a-13eb-4738-8b5d-b60ef0e22210fileName">doImport</con:setting>
+  </con:settings>
+  <con:call id="e7866246-c3a6-443e-97ea-4d251f2ee1a8" defaultOutgoingWss="" defaultIncomingWss="" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>https://demo.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">\r
    <soapenv:Header/>\r
    <soapenv:Body>\r
       <vex:doImport>\r
@@ -105,4 +113,11 @@
          </vex:in0>\r
       </vex:doImport>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doImportRequest"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request>
+    <con:credentials>
+      <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+      <con:authType>No Authorization</con:authType>
+    </con:credentials>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doImportRequest"/>
+  </con:call>
+</con:operation>
