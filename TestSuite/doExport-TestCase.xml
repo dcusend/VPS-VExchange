@@ -128,7 +128,7 @@
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
-        <con:endpoint>https://qa.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:endpoint>https://qa2.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
         <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
    <soapenv:Header/>
    <soapenv:Body>
@@ -139,7 +139,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>234</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>08192021</mod:endDate>
+            <mod:applicationID>234</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>05162024</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -151,7 +151,7 @@
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>2</mod:reportNumber><mod:startDate>08192021</mod:startDate>
+            <mod:reportNumber>1</mod:reportNumber><mod:startDate>05162024</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0001</mod:startTime>
             <!--Optional:-->
@@ -159,7 +159,7 @@
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>username</mod:username>
             <!--Optional:-->
-            <mod:workDate>08192021</mod:workDate>
+            <mod:workDate>05162024</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
@@ -546,7 +546,7 @@ exists( //soap:Envelope)</path>
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:applicationID>562</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>06062021</mod:endDate>
+            <mod:applicationID>562</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>08232023</mod:endDate>
             <!--Optional:-->
             <mod:endTime>2359</mod:endTime>
             <!--Optional:-->
@@ -558,7 +558,7 @@ exists( //soap:Envelope)</path>
             <!--Optional:-->
             
             <!--Optional:-->
-            <mod:reportNumber>1</mod:reportNumber><mod:startDate>06062021</mod:startDate>
+            <mod:reportNumber>1</mod:reportNumber><mod:startDate>08232023</mod:startDate>
             <!--Optional:-->
             <mod:startTime>0001</mod:startTime>
             <!--Optional:-->
@@ -566,7 +566,7 @@ exists( //soap:Envelope)</path>
             <!--Optional:-->
             <mod:transaction_tender>3</mod:transaction_tender><mod:username>user562</mod:username>
             <!--Optional:-->
-            <mod:workDate>06062021</mod:workDate>
+            <mod:workDate>08232023</mod:workDate>
          </vex:in0>
       </vex:doExport>
    </soapenv:Body>
@@ -638,6 +638,63 @@ exists( //soap:Envelope)</path>
             <ignoreComments>false</ignoreComments>
           </con:configuration>
         </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:wsaConfig action="https://www.velocitypayment.com/vexchange-ns/VexchangePortType/doExportRequest" mustUnderstand="NONE" version="200508"/>
+        <con:wsrmConfig version="1.2"/>
+      </con:request>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="request" id="7b13f6c0-2e25-4747-adcd-e76fbba07905" name="doExportQA-App492">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RequestStep">
+      <con:interface>VexchangeHttpBinding</con:interface>
+      <con:operation>doExport</con:operation>
+      <con:request name="doExportQA-App492" id="480e5fd7-03f5-4b2b-8633-bb8f2f9c53d6" defaultOutgoingWss="" defaultIncomingWss="">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:encoding>UTF-8</con:encoding>
+        <con:endpoint>https://qa2.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doExport>
+         <vex:in0>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:applicationID>492</mod:applicationID><mod:debitOnly>false</mod:debitOnly><mod:endDate>05172024</mod:endDate>
+            <!--Optional:-->
+            <mod:endTime>2359</mod:endTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:include_returns>true</mod:include_returns><mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>pwd492</mod:password>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:reportNumber>2</mod:reportNumber><mod:startDate>05172024</mod:startDate>
+            <!--Optional:-->
+            <mod:startTime>0001</mod:startTime>
+            <!--Optional:-->
+            
+            <!--Optional:-->
+            <mod:transaction_tender>3</mod:transaction_tender><mod:username>user492</mod:username>
+            <!--Optional:-->
+            <mod:workDate>05172024</mod:workDate>
+         </vex:in0>
+      </vex:doExport>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
