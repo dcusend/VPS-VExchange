@@ -530,114 +530,114 @@
         </con:settings>
         <con:encoding>UTF-8</con:encoding>
         <con:endpoint>https://qa.velocitypayment.com/vexchange/services/Vexchange</con:endpoint>
-        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">\r
-   <soapenv:Header/>\r
-   <soapenv:Body>\r
-      <vex:doImport>\r
-         <vex:in0>\r
-            <!--Optional:-->\r
-            <!--Optional:-->\r
-            <mod:applicationID>234</mod:applicationID>\r
-            <mod:messageVersion>2.0</mod:messageVersion>\r
-            <!--Optional:-->\r
-            <mod:password>password</mod:password>\r
-            <!--Optional:-->\r
-            <mod:username>username</mod:username>\r
-            <!--Optional:-->\r
-            <mod:vexTranModel>\r
-               <!--Zero or more repetitions:-->\r
-               <mod:VexchangeImportTransactionModel>\r
-                  <!--Optional:-->\r
-                  <mod:account_number>41**********1111</mod:account_number>\r
-                  <!--Optional:-->\r
-                  <mod:account_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:address1>2311 york road</mod:address1>\r
-                  <!--Optional:-->\r
-                  <mod:address2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:amount>10.00</mod:amount>\r
-                  <!--Optional:-->\r
-                  <mod:approval_code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:avs_response>Y</mod:avs_response>\r
-                  <!--Optional:-->\r
-                  <!--Optional:-->\r
-                  <!--Optional:-->\r
-                  <mod:card_exmo>12</mod:card_exmo>\r
-                  <mod:card_exyr>2022</mod:card_exyr>\r
-                  <mod:card_type>VI</mod:card_type>\r
-                  <!--Optional:-->\r
-                  <!--Optional:-->\r
-                  <!--Optional:-->\r
-                  <mod:countryID>840</mod:countryID>\r
-                  <mod:cvv_response>Y</mod:cvv_response>\r
-                  <!--Optional:-->\r
-                  <mod:debitNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:order_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <!--Optional:-->\r
-                  <mod:payer_name>James Smithy</mod:payer_name>\r
-                  <!--Optional:-->\r
-                  <mod:payment_date>05172020</mod:payment_date>\r
-                  <!--Optional:-->\r
-                  <!--Optional:-->\r
-                  <!--Optional:-->\r
-                  <mod:payment_method>1</mod:payment_method>\r
-                  <mod:payment_source>1</mod:payment_source>\r
-                  <mod:payment_time>142315</mod:payment_time>\r
-                  <!--Optional:-->\r
-                  <mod:process_date>05172020</mod:process_date>\r
-                  <!--Optional:-->\r
-                  <mod:remittance_id>test05172020102</mod:remittance_id>\r
-                  <!--Optional:-->\r
-                  <mod:routing_transit_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:settlement_date xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:taxAmount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:transaction_type>300</mod:transaction_type>\r
-                  <!--Optional:-->\r
-                  <mod:tx_custom_data>\r
-                     <!--Zero or more repetitions:-->\r
-                     <mod:VexchangeTransactionCustomData>\r
-                        <mod:name>Chakli</mod:name>\r
-                        <mod:value>Wakli</mod:value>\r
-                     </mod:VexchangeTransactionCustomData>\r
-                     <mod:VexchangeTransactionCustomData>\r
-                        <!--Optional:-->\r
-                        <mod:name>hello</mod:name>\r
-                        <!--Optional:-->\r
-                        <mod:value>world</mod:value>\r
-                     </mod:VexchangeTransactionCustomData>\r
-                  </mod:tx_custom_data>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field1 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field10 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field5 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field6 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field7 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field8 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-                  <!--Optional:-->\r
-                  <mod:variable_field9 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>\r
-               </mod:VexchangeImportTransactionModel>\r
-            </mod:vexTranModel>\r
-         </vex:in0>\r
-      </vex:doImport>\r
-   </soapenv:Body>\r
+        <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:vex="https://www.velocitypayment.com/vexchange-ns" xmlns:mod="http://model.event.vexchange.velocity.govolution.com">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <vex:doImport>
+         <vex:in0>
+            <!--Optional:-->
+            <!--Optional:-->
+            <mod:applicationID>234</mod:applicationID>
+            <mod:messageVersion>2.0</mod:messageVersion>
+            <!--Optional:-->
+            <mod:password>password</mod:password>
+            <!--Optional:-->
+            <mod:username>username</mod:username>
+            <!--Optional:-->
+            <mod:vexTranModel>
+               <!--Zero or more repetitions:-->
+               <mod:VexchangeImportTransactionModel>
+                  <!--Optional:-->
+                  <mod:account_number>41**********1111</mod:account_number>
+                  <!--Optional:-->
+                  <mod:account_type xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:address1>2311 york road</mod:address1>
+                  <!--Optional:-->
+                  <mod:address2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:amount>10.00</mod:amount>
+                  <!--Optional:-->
+                  <mod:approval_code xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:avs_response>Y</mod:avs_response>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <mod:card_exmo>12</mod:card_exmo>
+                  <mod:card_exyr>2028</mod:card_exyr>
+                  <mod:card_type>VI</mod:card_type>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <mod:countryID>840</mod:countryID>
+                  <mod:cvv_response>Y</mod:cvv_response>
+                  <!--Optional:-->
+                  <mod:debitNetwork xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:order_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <mod:payer_name>James Smithy</mod:payer_name>
+                  <!--Optional:-->
+                  <mod:payment_date>02202025</mod:payment_date>
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <!--Optional:-->
+                  <mod:payment_method>1</mod:payment_method>
+                  <mod:payment_source>1</mod:payment_source>
+                  <mod:payment_time>142315</mod:payment_time>
+                  <!--Optional:-->
+                  <mod:process_date>05172020</mod:process_date>
+                  <!--Optional:-->
+                  <mod:remittance_id>test02202025102</mod:remittance_id>
+                  <!--Optional:-->
+                  <mod:routing_transit_number xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:settlement_date xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:taxAmount xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:transaction_type>300</mod:transaction_type>
+                  <!--Optional:-->
+                  <mod:tx_custom_data>
+                     <!--Zero or more repetitions:-->
+                     <mod:VexchangeTransactionCustomData>
+                        <mod:name>Chakli</mod:name>
+                        <mod:value>Wakli</mod:value>
+                     </mod:VexchangeTransactionCustomData>
+                     <mod:VexchangeTransactionCustomData>
+                        <!--Optional:-->
+                        <mod:name>hello</mod:name>
+                        <!--Optional:-->
+                        <mod:value>world</mod:value>
+                     </mod:VexchangeTransactionCustomData>
+                  </mod:tx_custom_data>
+                  <!--Optional:-->
+                  <mod:variable_field1 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field10 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field2 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field3 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field4 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field5 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field6 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field7 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field8 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                  <!--Optional:-->
+                  <mod:variable_field9 xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+               </mod:VexchangeImportTransactionModel>
+            </mod:vexTranModel>
+         </vex:in0>
+      </vex:doImport>
+   </soapenv:Body>
 </soapenv:Envelope>]]></con:request>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
